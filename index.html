@@ -24,9 +24,9 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/guillaume-sainthillier/bad-tournament" class="button fork"><strong>Projet GitHub</strong></a>
+        <a href="https://github.com/guillaume-sainthillier/bad-tournament" class="button fork"><strong>View On GitHub</strong></a>
         <div class="downloads">
-          <span>Téléchargements:</span>
+          <span>Downloads:</span>
           <ul>
             <li><a href="https://github.com/guillaume-sainthillier/bad-tournament/zipball/master" class="button">ZIP</a></li>
             <li><a href="https://github.com/guillaume-sainthillier/bad-tournament/tarball/master" class="button">TAR</a></li>
@@ -47,42 +47,43 @@ Thomas Folgueral <a href="mailto:thomas.folgueral@gmail.com">thomas.folgueral@gm
 Guillaume Meiment <a href="mailto:killarlz@gmail.com">killarlz@gmail.com</a><br>
 Guillaume Sainthillier <a href="mailto:guillaume.sainthillier@gmail.com">guillaume.sainthillier@gmail.com</a><br></p>
 
-<h3>
-<a name="d%C3%A9ploiement" class="anchor" href="#d%C3%A9ploiement"><span class="octicon octicon-link"></span></a>Déploiement</h3>
+<h2>
+<a name="r%C3%A9cup%C3%A9ration" class="anchor" href="#r%C3%A9cup%C3%A9ration"><span class="octicon octicon-link"></span></a>Récupération</h2>
 
-<p>Pour déployer l'application, veuillez suivre ces indications:</p>
+<p>Si vous possédez <a href="http://git-scm.com/downloads">Git</a>, tapez dans un invité de commande:</p>
 
 <pre><code>$ cd path/to/www
-$ git clone https://github.com/guillaume-sainthillier/iscore.git
+$ git clone https://github.com/guillaume-sainthillier/bad-tournament.git
 </code></pre>
 
-<h3>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+<p>Si vous ne possédez pas Git (ce qui est déconseillé), téléchargez le projet au format Zip ou Tar.gz, et extrayez le dans le dossier www de votre serveur apache.</p>
 
-<p>Adaptez les variables host, user, pass, db du  fichier <strong>connection.php</strong> à la configuration de votre serveur.<br>
+<h2>
+<a name="d%C3%A9ploiement" class="anchor" href="#d%C3%A9ploiement"><span class="octicon octicon-link"></span></a>Déploiement</h2>
+
+<p>Adaptez les variables <strong>$host</strong>, <strong>$user</strong>, <strong>$pass</strong> et <strong>$db</strong> du  fichier <strong>./connection.php</strong> suivant la configuration de votre serveur.<br>
 Importez le fichier <strong>bad_tournament.sql</strong> dans votre base de données.<br></p>
 
-<h3>
-<a name="pr%C3%A9-requis" class="anchor" href="#pr%C3%A9-requis"><span class="octicon octicon-link"></span></a>Pré requis</h3>
+<h2>
+<a name="pr%C3%A9-requis" class="anchor" href="#pr%C3%A9-requis"><span class="octicon octicon-link"></span></a>Pré requis</h2>
 
 <p>Vous devez avoir installé:</p>
 
 <ul>
-<li>un serveur apache et php</li>
-<li>une base de données : mysql ou postgresql</li>
+<li>un serveur apache et PHP4.5+</li>
+<li>une base de données MySQL</li>
 </ul><p>En fait, reportez vous aux installations de :</p>
 
 <ul>
-<li>sous windows : wamp (<a href="http://www.wampserver.com/">http://www.wampserver.com/</a>) ou easyphp(<a href="http://easyphp.fr/">http://easyphp.fr/</a>)</li>
-<li>sous linux : lamp</li>
-</ul><p>Si vous utilisez postgre sql, voir install sur le site :
-<a href="http://www.postgresqlfr.org/">http://www.postgresqlfr.org/</a></p>
-
-<p>Si vous debutez, il est plus simple de garder mysql qui est packagee avec
-easyphp ou wamp.</p>
+<li>sous Windows : <a href="http://www.wampserver.com/">WAMP</a> ou <a href="http://easyphp.fr/">easyphp</a>
+</li>
+<li>sous Linux : <a href="http://doc.ubuntu-fr.org/lamp">LAMP</a>
+</li>
+</ul><p>Si vous débutez, il est plus simple de garder MySQL qui est packagé avec  wamp ou easyphp.</p>
       </section>
       <footer>
-        <p>Projet maintenu par <a href="https://github.com/guillaume-sainthillier">Guillaume Sainthillier</a></p>
+        <p>Project maintained by <a href="https://github.com/guillaume-sainthillier">guillaume-sainthillier</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
