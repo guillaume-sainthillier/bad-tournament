@@ -1,0 +1,228 @@
+html {
+	background:url("images/fond.png");
+	width:auto;
+	height:auto;
+	background-repeat:repeat;
+}
+
+body
+{
+	width:1000px;
+	margin:auto;
+	background-image:url("images/background.png");
+	background-repeat:repeat-y;
+	font-family:verdana;
+	font-size:small;
+}
+
+#class
+{
+	width:1201px;
+	margin:auto;
+	background-image:url("images/background2.png");
+	background-repeat:repeat-y;
+	font-family:verdana;
+	font-size:small;
+}
+
+body img
+{
+	text-decoration:none;
+	border:0px;
+}
+
+#liste_equipe
+{
+	background-color:#C3BFAC;
+	margin: auto;
+	border: medium solid #6495ed;
+	border : 1px outset	black;
+	border-collapse: collapse;
+	font-family:cursive;
+	font-size:small;
+	text-align:center;
+}
+
+#liste_equipe td{
+	padding:5px;
+	text-align:center;
+	border:1px solid black;
+	}
+	
+#liste_equipe th{
+	background-color:#746C60;
+	border:1px solid black;
+	text-align:center;
+	padding : 5px;
+	}
+	
+tr:hover{
+	background-color:#F2E2C3;
+}
+
+/*BANNIERE*/
+
+#banniere
+{
+	margin : auto;
+	width:798px;
+	height:151px;
+	background-image:url("images/banniere.png");
+	background-repeat: no-repeat;
+}
+#banniere2
+{
+	margin : auto;
+	width:1000px;
+	height:151px;
+	background-image:url("images/banniere2.png");
+	background-repeat: no-repeat;
+}
+
+
+#contenu
+{
+	margin-left:115px;
+	margin-right:110px;
+	text-align:justify;
+	min-height: 150px;
+}
+
+/*MENU*/
+
+#menu
+{
+	margin:auto;
+	width: 800px;
+	height:40px;
+}
+#menu table{
+	
+	border-collapse:collapse;
+}
+#menu td{
+
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#menu ul{
+	position: absolute;
+	background:url("images/fond.png");
+	left: -999em;
+	width: 115px;
+	border: 2px outset silver;
+	font-size:1.1em;
+}
+
+#menu ul li{
+
+	list-style-type: circle;
+}
+
+#menu td:hover ul{
+	
+	left: auto;
+	top: 177px;
+	padding-top:0px;
+}
+
+.b_off
+{
+	float: left;
+	background-image:url("images/bouton_off.png");
+	height:20px;
+	width:160px;
+	text-align:center;
+	vertical-align:10%; 
+	color:white;
+	font-size:1.1em;
+	padding-top:20px;
+	
+}
+
+.b_off:hover
+{	
+	
+	background-image:url("images/bouton_on.png");
+	height:20px;
+	width:160px;
+	text-align:center;
+	color:black;
+	font-size:1.2em;
+}
+
+#menu a
+{
+	text-decoration:none;
+}
+
+
+
+#menu ul li a{
+	color: black;
+}
+
+
+#menu ul li a:hover{
+	color: white;
+}
+
+#menu ul li:hover{
+	list-style-type: disc;
+}
+
+#field_inscr_equipe
+{
+	margin:auto;
+	width:250px;
+}
+
+/********INDEX*******/
+
+
+#ind{
+	text-align:center;
+}
+
+#ind a{
+	color: blue;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+#ind a:hover{
+	color: red;
+
+}
+
+#ind select{
+	width: 200px;
+}
+
+#field_inscr_equipe
+{
+	margin:auto;
+	width:250px;
+}
+
+#pied_de_page
+{
+	border:solid black 1px;
+	width:789px;
+	height:30px;
+	margin-left:100px;
+	margin-right:100px;
+	text-align:center;
+	padding:5px;
+}
+#pied_de_page2
+{
+	border:solid black 1px;
+	width:989px;
+	height:30px;
+	margin-left:100px;
+	margin-right:100px;
+	text-align:center;
+	padding:5px;
+}
