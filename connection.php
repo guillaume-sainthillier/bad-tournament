@@ -9,4 +9,6 @@
 	 
 	mysql_select_db($db)
 		or die("Erreur dans la selection de la base <br />".mysql_errno().':'.mysql_error());
+		
+	mysql_query("SET NAMES UTF8;");
 ?>
