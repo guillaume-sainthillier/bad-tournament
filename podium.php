@@ -30,10 +30,10 @@ header ("Content-type: image/png");
 	
 
 	
-	$debutx = (($largeur -($nbPoules*100))/2); //Position en X du premier trait rectangle sur le dessin (centré en fonction du nombre de poules)
+	$debutx = (($largeur -($nbPoules*100))/2); //Position en X du premier trait rectangle sur le dessin (centrÃ© en fonction du nombre de poules)
 	$finx = $debutx + 90; // Position en x du dernier trait du rectangle
 	
-	$lastHauteur = $hauteur; //Sauvegarde de l'avancée des figures dans le dessins en partant du bas  ((0;0) est en haut à gauche)
+	$lastHauteur = $hauteur; //Sauvegarde de l'avancÃ©e des figures dans le dessins en partant du bas  ((0;0) est en haut Ã  gauche)
 	
 	$positionDansRectangleY = ( (   (50+imagefontheight(5))  /2) - imagefontheight(5)); //Position du texte en Y dans le rectangle en fonction de la taille de la police
 	
@@ -41,23 +41,23 @@ header ("Content-type: image/png");
 	{
 		
 		ImageRectangle($image, $debutx, $hauteur-60 ,$finx, $hauteur-10 , $tabCouleurs[$i]);//On rempli l'image d'un rectangle de 100px (90px de long + 10 d'espaces)
-		ImageRectangle($image, $debutx+1, $hauteur-60 ,$finx+1, $hauteur-10 , $tabCouleurs[$i]);//Pour la mise en gras du rectangle(autre rectangle décalé d'1px)
+		ImageRectangle($image, $debutx+1, $hauteur-60 ,$finx+1, $hauteur-10 , $tabCouleurs[$i]);//Pour la mise en gras du rectangle(autre rectangle dÃ©calÃ© d'1px)
 		
 		
 		$texte = ("Poule ".($i+1));
 		$positionDansRectangleX = (90 - (strlen($texte)*imagefontwidth(5)))/2;
-		imagestring($image, 5, $debutx + $positionDansRectangleX , ($hauteur -60 )+ $positionDansRectangleY, $texte, $noir);//On y insère dedans le texte désiré
+		imagestring($image, 5, $debutx + $positionDansRectangleX , ($hauteur -60 )+ $positionDansRectangleY, $texte, $noir);//On y insÃ¨re dedans le texte dÃ©sirÃ©
 	
-		$tabRectangle[$i]['debut'] = $debutx; //On sauvegarde la position en X du début de chaque réctangles de poules
+		$tabRectangle[$i]['debut'] = $debutx; //On sauvegarde la position en X du dÃ©but de chaque rÃ©ctangles de poules
 		$tabRectangle[$i]['fin'] = $finx;
-		$debutx += 100; //On redécale la position à venir de la taille de l'objet dessiné 
+		$debutx += 100; //On redÃ©cale la position Ã  venir de la taille de l'objet dessinÃ© 
 		$finx += 100; //Idem
 	}
 	
 	$lastHauteur = $lastHauteur -60; // lastHauteur = hauteur - 60
 	
 	
-	//On relie les rectangles de poules à un point ($largeur/2;$lastHauteur-65)
+	//On relie les rectangles de poules Ã  un point ($largeur/2;$lastHauteur-65)
 	for($i = 0; $i < $nbPoules;$i++)
 	{
 		ImageLine ($image, $largeur/2, $lastHauteur-65 ,($tabRectangle[$i]['debut']+$tabRectangle[$i]['fin'])/2,$lastHauteur, $tabCouleurs[$i]);
@@ -91,8 +91,8 @@ header ("Content-type: image/png");
 	
 	
 		
-	$largeurRectangle = ((int)($largeur/$nbRectangle) - $espace); //On défini la largeur d'un rectangle variable suivant le nombre à afficher sur une ligne
-	$debutx = (($largeur -($nbRectangle*($largeurRectangle+$espace)))/2);//Idem qu'avant on redéfini la position en x du premier rectangle de match
+	$largeurRectangle = ((int)($largeur/$nbRectangle) - $espace); //On dÃ©fini la largeur d'un rectangle variable suivant le nombre Ã  afficher sur une ligne
+	$debutx = (($largeur -($nbRectangle*($largeurRectangle+$espace)))/2);//Idem qu'avant on redÃ©fini la position en x du premier rectangle de match
 	$finx = $debutx + $largeurRectangle; // Position en x du dernier trait du premier rectangle
 	// $lastHauteur = $hauteur;
 	
@@ -100,7 +100,7 @@ header ("Content-type: image/png");
 
 	for($i = 0; $i < $nbRectangle;$i++)
 	{
-		$newX[$i] = ($debutx+$finx)/2; //La nouvelle position en X des rectangles du dessus sera égale à la moitié de la largeur des rectangles du dessous
+		$newX[$i] = ($debutx+$finx)/2; //La nouvelle position en X des rectangles du dessus sera Ã©gale Ã  la moitiÃ© de la largeur des rectangles du dessous
 		$debutx = $debutx +$largeurRectangle +$espace;
 		$finx = $finx + $largeurRectangle +$espace;
 		
@@ -116,8 +116,8 @@ header ("Content-type: image/png");
 		if(isset($_SESSION['tabClassement'][$nbDebut][$i]))
 		{
 			$numPoule = $_SESSION['tabClassement'][$nbDebut][$i]['indicePoule'];
-			$couleur = $tabCouleurs[$numPoule-1]; // Les poules commencent à 1 , les indices de tableau à 
-			// $couleur = $blanc; // Les poules commencent à 1 , les indices de tableau à 
+			$couleur = $tabCouleurs[$numPoule-1]; // Les poules commencent Ã  1 , les indices de tableau Ã  
+			// $couleur = $blanc; // Les poules commencent Ã  1 , les indices de tableau Ã  
 		}else
 		{
 			$couleur = $noir;
@@ -164,7 +164,7 @@ header ("Content-type: image/png");
 				// ImageRectangle($image, ($newX[$i]-(int)(($largeurRectangle/2)))+1,$lastHauteur+1,($newX[$i]+(int)(($largeurRectangle/2)))+1,$lastHauteur-49, $couleur);
 				
 				$positionDansRectangleX = ($largeurRectangle - (strlen($texte)*imagefontwidth($k)))/2;
-				imagestring($image, $k, ($newX[$i]-($largeurRectangle/2))+$positionDansRectangleX, $lastHauteur-49+$positionDansRectangleY, $texte, $noir);//On y insère dedans le texte désiré
+				imagestring($image, $k, ($newX[$i]-($largeurRectangle/2))+$positionDansRectangleX, $lastHauteur-49+$positionDansRectangleY, $texte, $noir);//On y insÃ¨re dedans le texte dÃ©sirÃ©
 				
 				if($k < 4)								
 					ImageLine($image, $newX[$i], $lastHauteur-50 ,$newX[$i],$lastHauteur-60, $noir);

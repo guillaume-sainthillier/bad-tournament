@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 SESSION_START();
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -6,7 +6,7 @@ SESSION_START();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
    <head>
        <title>Liste des équipes</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	   <link rel="stylesheet" media="screen" type="text/css" title="design" href="style.css" />
    </head>
    <body>

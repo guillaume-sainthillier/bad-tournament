@@ -7,7 +7,7 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
    <head>
        <title>Creer un tournoi</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	   <link rel="stylesheet" media="screen" type="text/css" title="design" href="style.css" />
 	   
 	   <?php

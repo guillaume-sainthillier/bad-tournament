@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 SESSION_START();
 unset($_SESSION['deja']);
 ?>
